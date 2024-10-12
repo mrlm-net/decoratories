@@ -54,5 +54,9 @@ Also don't forget that there is specific order in which decorators are processed
 
 ## Contributions
 
+_Contributions are welcomed and must follow [Code of Conduct](https://github.com/mrlm-net/decoratories?tab=coc-ov-file) and common [Contributions guidelines](https://github.com/mrlm-net/.github/blob/main/docs/CONTRIBUTING.md)._
+
+> If you'd like to report security issue please follow [security guidelines](https://github.com/mrlm-net/decoratories?tab=security-ov-file).
+
 ---
 <sup><sub>_2024 &copy; All rights reserved - Martin Hrášek <@marley-ma>_</sub></sup>
