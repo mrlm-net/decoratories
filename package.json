@@ -1,5 +1,5 @@
 {
-    "name": "@mrlm.net/node-decoratories",
+    "name": "@mrlm/node-decoratories",
     "version": "0.1.0",
     "description": "Node.js Decoratories",
     "type": "module",
