@@ -1,17 +1,17 @@
-export type IFunctionDecotator = (
+export type IMethodDecotator = (
     target: Record<string, any>, 
     propertyKey: string, 
     descriptor: PropertyDescriptor, 
     ...args: any[]
 ) => void;
 
-export type IFunctionDecoratorFactory = (
-    decorator: IFunctionDecotator,
+export type IMethodDecoratorFactory = (
+    decorator: IMethodDecotator,
     ...args: any[]
-) => IFunctionDecotator;
+) => IMethodDecotator;
 
-export const FunctionDecoratorFactory: IFunctionDecoratorFactory = (
-    decorator: IFunctionDecotator, 
+export const MethodDecoratorFactory: IMethodDecoratorFactory = (
+    decorator: IMethodDecotator, 
     ...args: any[]
 ) => {
     return (

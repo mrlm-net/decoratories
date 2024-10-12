@@ -17,6 +17,13 @@
         "name": "Martin Hrášek - MRLM.NET",
         "email": "martin@hrasek.email"
     },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/mrlm-net/decoratories.git"
+    },
+    "scripts": {
+        "build": "npx vite build"
+    },
     "devDependencies": {
         "@types/node": "^22.7.5",
         "typescript": "~5.4.2",
