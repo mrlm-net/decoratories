@@ -2,6 +2,13 @@
 
 Typescript package of [factory methods](https://www.typescriptlang.org/docs/handbook/decorators.html#decorator-factories) for opinionated usage of [Typescript](https://www.typescriptlang.org/) decorators. Purpose of this library is to abstract creation of the decorators to factory methods and allow user to create decorators with and without input parameters.
 
+| Package | `mrlm-net/decoratories` |
+| :-- | :-- |
+| NPM name | `@mrlm/decoratories` |
+| NPM version | ![NPM Version](https://img.shields.io/npm/v/@mrlm/decoratories) |
+| Latest version | ![GitHub Release](https://img.shields.io/github/v/release/mrlm-net/decoratories) |
+| License | ![GitHub License](https://img.shields.io/github/license/mrlm-net/decoratories) |
+
 ## Table of contents
 
 - [Installation](#installation)
