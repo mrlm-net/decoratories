@@ -44,12 +44,15 @@ __3. Build package__
 $ yarn run build
 ```
 
+> __You can also build custom Node module with predefined decorators for direct, versioned usage in multiple projects. If you interested please consult [`custom package`](./docs/custom-package.md) guide.__
 
 ## Usage
 
 > If you are new in Typescript decorators I suggest you to read this [documentation](https://www.typescriptlang.org/docs/handbook/decorators.html) page first.
 
-Motivation to create decorator factories as Node package was to allow user use various implementations without the need to think about their composition and also create some guidelines for their usage in my other projects.
+Motivation to create decorator factories as Node package was to allow end users use various implementations without the need to think about their composition and also create some guidelines for decorators usage in my other projects as they are pretty powerful.
+
+Package exports unified inderface via method describing types of decorators, which helping you to merge custom decorator attributes which natively provided ones.
 
 ### Lifecycle
 
@@ -78,7 +81,20 @@ const classDecorator = ClassDecoratorFactory(
     (...args: any[]) => console.log(...args)
 );
 
+@classDecorator
+class Example {
+    // ...    
+}
+
 // Usage with arguments
+const classDecorator = (...args: any[]) => ClassDecoratorFactory(
+    (...args: any[]) => console.log(...args), ...args
+);
+
+@classDecorator("argument", "or", "more")
+class Example {
+    // ...    
+}
 ```
 
 ### Method decorator
@@ -104,7 +120,20 @@ const methodDecorator = MethodDecoratorFactory(
     (...args: any[]) => console.log(...args)
 );
 
+@methodDecorator
+function Example(): void {
+    // ...
+}
+
 // Usage with arguments
+const methodDecorator = (...args: any[]) => MethodDecoratorFactory(
+    (...args: any[]) => console.log(...args), ...args
+);
+
+@methodDecorator("argument", "or", "more")
+function Example(): void {
+    // ...
+}
 ```
 
 ### Accessor decorator
@@ -130,7 +159,29 @@ const accessorDecorator = AccessorDecoratorFactory(
     (...args: any[]) => console.log(...args)
 );
 
+class Example {
+    private _name: any;
+
+    @accessorDecorator
+    get name(): any {
+        return this._name
+    }
+}
+
 // Usage with arguments
+const accessorDecorator = (...args: any[]) => AccessorDecoratorFactory(
+    (...args: any[]) => console.log(...args), ...args
+);
+
+class Example {
+    private _name: any;
+
+    @accessorDecorator("argument", "or", "more")
+    get name(): any {
+        return this._name
+    }
+}
+
 ```
 
 ### Property decorator
