@@ -1,6 +1,6 @@
 {
     "name": "@mrlm/decoratories",
-    "version": "0.1.2",
+    "version": "0.2.0",
     "description": "Node.js Decoratories",
     "type": "module",
     "main": "./dist/index.js",
@@ -29,12 +29,10 @@
     "devDependencies": {
         "@types/node": "^22.7.5",
         "typescript": "~5.4.2",
+        "nanoid": "3.3.8",
         "vite": "^5.4.8",
         "vite-plugin-dts": "^4.2.4",
         "vitest": "^2.1.8"
     },
-    "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610",
-    "dependencies": {
-        "nanoid": "3.3.8"
-    }
+    "packageManager": "yarn@1.22.22+sha1.ac34549e6aa8e7ead463a7407e1c7390f61a6610"
 }
