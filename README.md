@@ -275,4 +275,4 @@ _Contributions are welcomed and must follow [Code of Conduct](https://github.com
 > If you'd like to report security issue please follow [security guidelines](https://github.com/mrlm-net/decoratories?tab=security-ov-file).
 
 ---
-<sup><sub>_2024 &copy; All rights reserved - Martin Hrášek [<@marley-ma>](https://github.com/marley-ma) and WANTED.solutions s.r.o. [<@wanted-solutions>](https://github.com/wanted-solutions)_</sub></sup>
+<sup><sub>_All rights reserved &copy; Martin Hrášek [<@marley-ma>](https://github.com/marley-ma) and WANTED.solutions s.r.o. [<@wanted-solutions>](https://github.com/wanted-solutions)_</sub></sup>
